@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* width: 20rem; */
+    overflow: hidden;
+}
+#btn-container{
+    /* display: flex; */
+    justify-content: center;
+    text-align: center;
+}
+#CounterLable{
+    display: block;
+    text-align: center;
+    font-size: 10em;
+    font-family:Helvetica;
+
+}
+.buttons{
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    color: white;
+    background-color: #eeff00;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.25s;
+}
+.buttons:hover{
+    background-color: #ffe100 ;
+}
+
