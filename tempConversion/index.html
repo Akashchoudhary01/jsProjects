@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Temperature Conversion</title>
+</head>
+<body>
+    <h1>Temperature Conversion APP</h1>
+    <hr class="hr">
+    <hr class="hr">
+    <form>
+        <input type="number" class="textbox" placeholder="0" id="textbox" value="" > <br>
+        <div class="section">
+
+            <input type="radio" id="toFahrenhite" name="unit">
+            <label for="toFahrenhite">Calsius ➡️ Fahrenhite</label> <br>
+        </div>
+
+        <div class="section">
+            <input placeholder="." type="radio" id="toCalsius" name="unit">
+            <label for="toFahrenhite"> Fahrenhite ➡️ Calsius</label>
+        </div>
+
+        <button type="button" id="btn" onclick="convert()"> Submit</button>
+        <h2 id="Result"></h2>
+    </form>
+    
+    <!-- External Javascript -->
+     <script src="./script.js"></script>
+</body>
+</html>
