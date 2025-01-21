@@ -1,0 +1,142 @@
+/* General Styles */
+body {
+    background: linear-gradient(to right, #070707, #ff0000);
+    text-align: center;
+    font-family: cursive;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#label {
+    font-size: 1.2rem;
+}
+
+#btn {
+    background: transparent;
+    border: 1.5px solid black;
+    box-shadow: 5px 5px 10px black;
+    padding: 15px 45px;
+    cursor: pointer;
+    color: white;
+    font-size: 1rem;
+    transition: 0.3s ease;
+}
+
+#btn:active {
+    background: transparent;
+    border: 1.5px solid black;
+    box-shadow: 5px 1px 5px black;
+    color: white;
+}
+
+#number {
+    margin-top: 1rem;
+    text-align: center;
+    padding: 10px 30px;
+    border-radius: 5px;
+    background: transparent;
+    border: 1.5px solid black;
+    box-shadow: 5px 5px 10px black;
+    margin-bottom: 2rem;
+    color: white;
+    font-size: 1rem;
+}
+
+#number:focus {
+    background: transparent;
+    border: 1.5px solid black;
+    box-shadow: 5px 5px 10px black;
+    outline: none;
+}
+
+#diceresult {
+    margin: 25px;
+    font-size: 1.2rem;
+}
+
+#diceImages {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+#diceImages img {
+    width: 80px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px black;
+    transition: transform 0.3s ease;
+}
+
+#diceImages img:hover {
+    transform: scale(1.1);
+}
+
+/* Media Queries for Responsiveness */
+
+/* For devices with max-width of 768px (tablets and small laptops) */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    #btn {
+        padding: 12px 30px;
+        font-size: 0.9rem;
+    }
+
+    #number {
+        font-size: 0.9rem;
+        padding: 8px 25px;
+    }
+
+    #diceImages img {
+        width: 70px;
+    }
+}
+
+/* For devices with max-width of 480px (mobile phones) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    #btn {
+        padding: 10px 25px;
+        font-size: 0.8rem;
+    }
+
+    #number {
+        font-size: 0.8rem;
+        padding: 6px 20px;
+    }
+
+    #diceresult {
+        font-size: 1rem;
+    }
+
+    #diceImages {
+        flex-direction: column; /* Stack images in a column */
+        align-items: center; /* Center the images */
+    }
+
+    #diceImages img {
+        width: 60px; /* Adjust size for mobile */
+        margin: 5px 0; /* Add vertical spacing between images */
+    }
+}
